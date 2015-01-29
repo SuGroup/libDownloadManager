@@ -33,7 +33,7 @@ public class DownloadRequest implements Comparable<DownloadRequest> {
 
     private DownloadRequestQueue mRequestQueue;
 
-    private DownloadStatusListener mDownloadListener;
+    private IDownloadStatusListener mDownloadListener;
 
     private int mRetryAttempts;
     private long mRetryWaitMilli;
@@ -110,11 +110,11 @@ public class DownloadRequest implements Comparable<DownloadRequest> {
 		this.mDownloadState = mDownloadState;
 	}
 
-	DownloadStatusListener getDownloadListener() {
+	IDownloadStatusListener getDownloadListener() {
 		return mDownloadListener;
 	}
 
-	public DownloadRequest setDownloadListener(DownloadStatusListener downloadListener) {
+	public DownloadRequest setDownloadListener(IDownloadStatusListener downloadListener) {
 		this.mDownloadListener = downloadListener;
         return this;
 	}
