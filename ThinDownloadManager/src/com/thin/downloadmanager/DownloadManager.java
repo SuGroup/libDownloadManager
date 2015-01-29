@@ -84,6 +84,12 @@ public interface DownloadManager {
      */
     public final static int ERROR_RETRY_FAILED = 1009;
 
+	/**
+	 * Add a download request.
+	 * 
+	 * @param request
+	 * @return
+	 */
 	public int add(DownloadRequest request);
 
 	public int cancel(int downloadId);
