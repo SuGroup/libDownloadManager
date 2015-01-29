@@ -1,6 +1,6 @@
 package com.thin.downloadmanager;
 
-public interface DownloadManager {
+public interface IDownloadManager {
 
 	/**
 	 * Status when the download is currently pending.

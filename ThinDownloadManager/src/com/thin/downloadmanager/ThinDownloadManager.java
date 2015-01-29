@@ -1,6 +1,6 @@
 package com.thin.downloadmanager;
 
-public class ThinDownloadManager implements DownloadManager {
+public class ThinDownloadManager implements IDownloadManager {
 
     /** Download request queue takes care of handling the request based on priority. */
     private DownloadRequestQueue mRequestQueue;

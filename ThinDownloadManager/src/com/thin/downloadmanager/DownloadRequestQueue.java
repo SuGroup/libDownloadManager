@@ -144,7 +144,7 @@ public class DownloadRequestQueue {
 				}
 			}
 		}
-		return DownloadManager.STATUS_NOT_FOUND;
+		return IDownloadManager.STATUS_NOT_FOUND;
 	}
 
 	/**

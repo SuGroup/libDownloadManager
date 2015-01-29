@@ -60,7 +60,7 @@ public class DownloadRequest implements Comparable<DownloadRequest> {
         if (scheme == null || (!scheme.equals("http") && !scheme.equals("https"))) {
             throw new IllegalArgumentException("Can only download HTTP/HTTPS URIs: " + uri);
         }
-        mDownloadState = DownloadManager.STATUS_PENDING;
+        mDownloadState = IDownloadManager.STATUS_PENDING;
         mUri = uri;
         mRetryAttempts = DEFAULT_RETRY_ATTEMPTS;
         mRetryWaitMilli = DEFAULT_RETRY_WAIT;
