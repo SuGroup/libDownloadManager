@@ -1,6 +1,6 @@
 package com.thin.downloadmanager;
 
-public class ThinDownloadManager implements IDownloadManager {
+public class DownloadManager implements IDownloadManager {
 
     /** Download request queue takes care of handling the request based on priority. */
     private DownloadRequestQueue mRequestQueue;
@@ -8,7 +8,7 @@ public class ThinDownloadManager implements IDownloadManager {
     /**
     * Default constructor
     */
-    public ThinDownloadManager() {
+    public DownloadManager() {
         mRequestQueue = new DownloadRequestQueue();
         mRequestQueue.start();
     }
@@ -16,7 +16,7 @@ public class ThinDownloadManager implements IDownloadManager {
     /** Constructor taking MAX THREAD POOL SIZE  Allows maximum of 4 threads.
     * Any number higher than four or less than one wont be respected.
     **/
-    public ThinDownloadManager(int threadPoolSize) {
+    public DownloadManager(int threadPoolSize) {
         mRequestQueue = new DownloadRequestQueue(threadPoolSize);
         mRequestQueue.start();
     }
